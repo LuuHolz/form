@@ -1,37 +1,42 @@
 import TimeIcon from "../assets/time.svg";
 import CloseIcon from "../assets/close.svg";
-import inputRadio from '../components/inputRadio';
-import inputTexts from '../components/inputText';
-import desplegable from '../components/desplegable';
-import textArea from '../components/textArea';
-import buttonEnviar from '../components/buttonEnviar';
+import ButtonEnviar from "../components/ButtonEnviar.tsx";
+import InputText from "../components/InputText.tsx";
+import Desplegable from "../components/Desplegable.tsx";
+import InputRadio from "../components/InputRadio.tsx";
+import TextArea from "../components/TextArea.tsx";
 
 const Home = () => {
   return (
     <div className="homeContainer">
       <div className="topHomeContainer">
-        <p>Te llamamos</p>
+        <p className="textTeLlamamos">Te llamamos</p>
         <img src={CloseIcon} alt="time" className="closeIcon" />
       </div>
 
       <p>Introduce tus datos para poder ponernos en contacto contigo</p>
       <p>Nombre</p>
-      <inputTexts/>
+      <InputText />
       <p>Apellido</p>
-      <inputTexts/>
+      <InputText />
       <p>Sexo</p>
-      <desplegable/>
+      <Desplegable />
       <p>Email</p>
-      <inputTexts/>
+      <InputText />
       <p>¿Cuándo quieres que te contactemos?</p>
-      <inputRadio/>
-      <p>Observaciones <span>(Opcional)</span></p>
-      <textArea/>
+      <InputRadio />
+      <p>
+        Observaciones <span>(Opcional)</span>
+      </p>
+      <TextArea />
 
       <div className="textsBottom">
         <img src={TimeIcon} alt="time" className="timeIcon" />
+        <p>Nuestro horario es <br />
+        <span className="boldText">lunes a viernes laborables de 8:00 a 21:00 hs.</span></p>
       </div>
-      <buttonEnviar/>
+
+      <ButtonEnviar />
     </div>
   );
 };

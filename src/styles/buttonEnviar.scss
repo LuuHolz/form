@@ -1,0 +1,17 @@
+.buttonEnviar{
+    background-color: $button-color;
+    border: none;
+    border-radius: 24px;
+    width: 347px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+}
+
+.textButton{
+    color: $basic-color;
+    font-size: 14px;
+    width: 85px;
+    height: 19px;
+    
+}

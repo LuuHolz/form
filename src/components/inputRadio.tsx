@@ -1,7 +1,13 @@
+import React from 'react'
 
 const inputRadio = () => {
   return (
-    <div>inputRadio</div>
+    <div>
+      <input type="radio" id='valor' name='radio-group'/>
+      <label htmlFor="valor">
+        <p>text</p>
+      </label>
+    </div>
   )
 }
 
